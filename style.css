@@ -1,0 +1,100 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #f8f9fa;
+  color: #212529;
+}
+
+header {
+  background: linear-gradient(to right, #6a11cb, #2575fc);
+  color: white;
+  text-align: center;
+  padding: 5rem 1rem;
+}
+
+header h1 {
+  font-size: 2.8rem;
+  animation: fadeInDown 1s ease-out;
+  font-weight: 200;
+}
+
+header p {
+  font-size: 1.25rem;
+  animation: fadeInUp 1.2s ease-out;
+}
+
+.social a {
+  color: white;
+  margin: 0 0.5rem;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.social a:hover {
+  color: #ffc107;
+}
+
+.section {
+  padding: 3rem 0;
+  animation: fadeIn 1.2s ease-out;
+}
+
+.card {
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+}
+
+footer {
+  background-color: #212529;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
